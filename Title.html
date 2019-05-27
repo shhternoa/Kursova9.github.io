@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang= "ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>POGodushka</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="heading clearfix">
+				<img src="img/NewProvidence.png" alt="NewProvidence" class="logo"></img>
+				<nav>
+					<ul class="menu">
+						<li>
+							<a href="#NewProvidence">NewProvidence</a>
+						</li>
+						<li>
+							<a href="#Возможности">Возможности</a>
+						</li>
+						<li>
+							<a href="#Приложение">О приложении </a>
+						</li>
+						<li>
+							<a href="#Контакты">Контакты</a>
+						</li>
+					</ul>
+				</nav> 
+		</div>
+			<div class="titles" >
+				<a name="NewProvidence"></a>
+				<div class="titles__first" >
+				<h1> Что ждет нас завтра? 	</h1>	
+				</div>
+			</div>
+		<h2>	Дожь? Снег? Жара? Не знаете что одеть? Не беда! <br>
+		С приложением NewProvidence вы всегда будете в курсе событий. </h2>
+		<div>
+			<a class="button" href="#Особенности">Подробнее</a>
+		</div>
+		
+		
+	</header>
+
+		<section>
+			<div class="container">
+				<a name="Возможности"></a>
+				<div class ="titles2">
+					<h2>
+						Возможности
+					</h2>
+				
+				</div>
+				<div class="services clearfix" >
+					<div class="s1" >
+						<img src="img/Screenshot_1.png " style="width: 5vw; position: relative; left: 3.5%" alt="Всегда в работе"></img>
+						<h3> Всегда в работе </h3>
+						<p>
+							Защита 24\7, ваши данные, ваше расписание, ваша жизнь в одном месте и под защитой от посторонних. 
+						</p>
+						
+					</div>
+					<div class="s1" >
+						<img src="img/Screenshot_2.png " style="width: 5vw; position: relative; left: 3.5%" alt="Никаких но!"></img>
+						<h3> Никаких но! </h3>
+						<p>
+							Стабильная работа,высокая производительность,умные уведомления,все чего бы вы хотели до мельчайших деталей!<br>
+							С нашим преложением вы всегда сможете контролировать свою жизнь.<br>
+							Ну,а если вы новичек,то познакомиться с фразой "Time Management"!
+						</p>
+						
+					</div>
+					
+				</div>
+					
+				</div>
+			
+		</div>
+		
+		</section>
+
+		<section id="about">
+			<div class="container">
+				<a name="Приложение"></a>
+				<div class="titles" >
+				<div class="titles__first" >
+				<h1> О Приложении </h1>
+				</div>
+			</div>
+	<h4>
+		Скриншоты
+	</h4>
+	<div class="container2">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/Screen2.png" style="width:15%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/Screen3.png" style="width:15%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/iPho1ne6.png" style="width:25%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/iPhone6.png" style="width:15%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+		<div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/Screen2.png" style="width:30%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/Screen3.png" style="width:30%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/iPho1ne6.png" style="width:50%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/iPhone6.png" style="width:30%" onclick="currentSlide(4)">
+    </div>
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+	
+  </div>
+		<div class="text">
+			<a name="Особенности"></a>
+			<p>
+				Все бесплатно, еженедельно, ежедневно, ежечасно обновляется в режиме реального времени.<br>
+				Полный отчет. Отображает всю информацию о погоде: время нахождения, температуру, атмосферное давление, погодные условия, расстояние видимости, относительную влажность, количество осадков в разных соединениях, точку росы, скорость и направление ветра.<br>
+				Мероприятия страны в которой вы находитесь. Когда вы покупаете авиабилеты или билеты на концерт, бронируете номер в гостинице, заказываете столик в ресторане или планируете что-нибудь ещё, соответствующее мероприятие автоматически добавляется в ваш календарь.<br>
+				Цели. Ставьте перед собой задачи, например "бегать 3 раза в неделю", и Календарь автоматически найдет для них подходящее время.
+
+			</p>
+		</div>
+		
+		</section>
+
+		<section id="contacts">
+				<a name="Контакты"></a>
+				<h2>
+					Контакты
+				</h2>
+				<div class="containerph">
+  <img src="img/а1.png" alt="petya" class="image">
+  <div class="overlay">
+    <div class="opis">Владислав Владимирович Жиромётов, способен сделать все в лучшем виде, иногда подгорает с заказов, начальство дает ему играть в рулетку выбирая на угад заказы. </div>
+    <br>
+    <div class="opis">
+        Телефон: +3806601100010
+    </div>
+  </div>
+</div>
+<div class="containerph">
+   <img src="img/м1.png" alt="vasya" class="image">
+  <div class="overlay">
+    <div class="opis">Виталий Артасович Цаль,искусный веб-дизайнер,был топ 10 рейтинга по разработке сайтов всю жизнь, пока всякие компании по типу "Wix" и тому подобные не вытеснили его с большого рынка. Теперь же Виталий занимается разработкой приложения в нашей компании.</div>
+<br>
+    <div class="opis">
+        Телефон:+3806610011101
+    </div>
+</div>
+</div>
+		</section>
+
+		
+			<div class="containerf">
+				<div class="foot">
+					<h2>
+						Сайт был сделан для курсовой работы, с целью проявить свои знания за курс <br>
+						© POGodushka
+					</h2>
+				</div>
+		</div>
+</body>
+</html>

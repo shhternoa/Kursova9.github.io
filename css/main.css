@@ -1,0 +1,279 @@
+body{
+	font-family: Varela Round,sans-serif;
+	padding: 0;
+	margin: 0;
+}
+header {
+	background: url(../img/Photo.png) no-repeat center top / cover;
+    height:60vw;
+}
+.container{
+	width: 95%;
+	margin: 0 auto;
+
+}
+.logo {
+	margin-top: 10px;
+	float: left;
+}
+
+nav{
+	float: right;
+	margin-top: 25px;
+}
+.menu{
+	padding: 0;
+	margin:0;
+	display:block;
+}
+.menu li{
+	float: left;
+	display: block;
+	margin-right: 48px;
+}
+.menu a {
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.container a:hover {
+	color:gray;
+
+}
+.titles__first {
+	font-size: 72px;
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 150px;
+}
+h2{
+	text-transform: uppercase;
+	text-align: center;
+	max-width: 95%;
+	position: relative;
+	top: 1vw;
+	font-size: 1.3vw;
+	left:3%
+
+}	
+
+h1{
+	font-size: 1.5vw;
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+	top: 0.5vw;
+}
+.clearfix{
+	content: '';
+	display: table;
+	width: 100%;
+	clear:both;
+}
+.button {
+	background: white;
+	color: black;
+	border-radius: 3px;
+	display: block;
+	width: 10vw;
+	height: 0.5vw;
+	padding: 30px 0;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1vw;
+	position: relative;
+	top:5vw;
+	}
+.titles2 h2{
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;	
+
+}
+.services{
+
+}
+.s1{
+	width: 95%;
+	float: left;
+	text-align: center;
+}
+.s1 h3{
+	font-size: 2vw;
+	position: relative;
+	left: 3.5%;
+
+}
+.s1 p {
+	font-size: 1vw;
+	color: black;
+	line-height: 1.55em;
+
+
+}
+#about{
+	background: url(../img/Background1.png)  center / cover;
+	height: 55vw;
+
+}
+.screens img {
+	height: 30vw;
+	float: left;
+	text-align: center;
+	position: relative;
+    left: 21.5%;
+    right: 0;
+    margin: 0 auto;
+}
+h4{
+	font-size: 18px;
+	text-align: center;
+}
+.text h2{
+	text-align: center;
+	color: black;
+	position: absolute;
+	top: 70%;
+	left: 44%
+}
+.text p{
+	font-size: 1vw;
+	text-align: center;
+	line-height: 1.55em;
+	color: black;
+}
+.contacts h2{
+	text-align: center;
+}
+#contacts{
+	height: 55vw;
+}
+
+.containerph {
+  position: relative;
+  margin:0 auto;
+  width: 30%;
+}	
+
+.image {
+  display: block;
+margin:0 auto;
+  text-align:center;
+  width: 80%;
+  height: 20vw;
+}
+
+.overlay {
+  position: absolute;
+  margin:0 auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:black;
+}
+
+.containerph:hover .overlay {
+  opacity: 0.7;
+}
+
+.opis {
+  color: white;
+  position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 90%;
+    font-size: 1vw;
+    font-weight: 900;
+}
+.foot h2{
+	background: black;
+	color: white;
+
+}
+.containerf{
+	max-width: 70%;
+	position:relative;
+	left: 15%;
+}
+
+.container2 {
+  position: relative;
+  
+}
+.mySlides {
+  display: none;
+  text-align: center;
+  
+}
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 25%;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 25%;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  left: 25%;
+  top: 0;
+}
+.caption-container {
+  text-align: center;
+  padding: 2px 16px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float:left;
+  width: 24.66%;
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
